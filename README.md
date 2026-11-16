@@ -23,6 +23,8 @@ Isi `setelan.json`:
 - `userId`: ID karyawan, terlihat di alamat halaman My Info Talenta (`...?id=1234567`).
 - `companyId`: ID perusahaan, terlihat di alamat panggilan ke `api.mekari.com` (`/companies/1234/...`) pada tab Network di DevTools.
 
+- `email` dan `password` (opsional): bila diisi, bot login sendiri saat sesi habis. Hanya untuk login email + password; bila Mekari meminta captcha atau OTP, login tetap harus manual. Password tersimpan apa adanya di berkas ini, jadi isi hanya di komputer pribadi. Sebagai ganti berkas, keduanya bisa diberikan lewat variabel lingkungan `TALENTA_EMAIL` dan `TALENTA_PASSWORD`.
+
 `npm run login` membuka jendela Edge untuk login ke Talenta. Sesi login disimpan di folder `profil/` dan dipakai lagi pada perintah berikutnya.
 
 ## Menulis lembur.txt

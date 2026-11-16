@@ -10,9 +10,15 @@ function bacaSetelan() {
   if (!fs.existsSync(berkas)) {
     throw new Error(`Belum ada ${berkas}. Salin setelan.contoh.json lalu isi ID Anda.`);
   }
-  const { userId, companyId } = JSON.parse(fs.readFileSync(berkas, 'utf8'));
+  const { userId, companyId, email, password } = JSON.parse(fs.readFileSync(berkas, 'utf8'));
   if (!userId || !companyId) throw new Error(`${berkas} harus memuat userId dan companyId.`);
-  return { userId: String(userId), companyId: String(companyId) };
+  return {
+    userId: String(userId),
+    companyId: String(companyId),
+    // Opsional: bila diisi, bot login sendiri saat sesi habis.
+    email: process.env.TALENTA_EMAIL || email || '',
+    password: process.env.TALENTA_PASSWORD || password || '',
+  };
 }
 
 export const config = {

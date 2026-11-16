@@ -1,4 +1,6 @@
 {
   "userId": "1234567",
-  "companyId": "1234"
+  "companyId": "1234",
+  "email": "",
+  "password": ""
 }
