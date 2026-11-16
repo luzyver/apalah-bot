@@ -1,0 +1,13 @@
+## 2026-11-04
+[21.43 - 22.59] Disuruh atasan
+- Kegiatan pertama
+- Kegiatan kedua
+
+## 2026-11-05
+[21.25 - 00.14] Disuruh atasan
+- Kegiatan lain
+
+## 2026-11-07
+7 November 2026
+[09.55 - 15.15 & 00.20 - 01.30] Disuruh atasan
+- Lembur hari libur yang terputus, tiap bagian dipisah dengan &

@@ -1,0 +1,17 @@
+{
+  "name": "talenta-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Bot pengajuan lembur Talenta lewat akun karyawan sendiri",
+  "scripts": {
+    "rekam": "node src/rekam.js",
+    "login": "node src/login.js",
+    "ajukan": "node src/ajukan.js",
+    "kirim": "node src/ajukan.js --kirim",
+    "test": "node --test uji/"
+  },
+  "dependencies": {
+    "playwright-core": "^1.50.0"
+  }
+}
